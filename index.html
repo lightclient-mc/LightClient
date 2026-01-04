@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Client</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:#050914;color:#eaf1ff;overflow-x:hidden}
+    .bg{position:fixed;inset:0;background:radial-gradient(1200px 600px at 50% -200px,#0a1cff,transparent 60%),radial-gradient(800px 400px at 80% 20%,#001a66,transparent 60%);z-index:-1}
+    .container{max-width:1200px;margin:0 auto;padding:48px 24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:22px;letter-spacing:.5px}
+    .hero{margin-top:96px;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    h1{font-size:72px;line-height:1.02;margin:0}
+    .glow{background:linear-gradient(90deg,#6ea8ff,#2b5cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{font-size:20px;opacity:.9;margin-top:24px;max-width:520px}
+    .actions{margin-top:40px;display:flex;gap:20px;flex-wrap:wrap}
+    .btn{padding:18px 30px;border-radius:16px;border:1px solid #2b5cff;background:linear-gradient(180deg,#163bff,#0b1e66);color:#fff;text-decoration:none;font-size:18px;box-shadow:0 20px 60px rgba(43,92,255,.45)}
+    .btn.secondary{background:#070f2e;border-color:#1b3cff;box-shadow:none}
+    .panel{background:linear-gradient(180deg,rgba(15,25,80,.85),rgba(5,9,20,.9));border:1px solid #1a2d7a;border-radius:24px;padding:32px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .stat{font-size:32px}
+    .stat span{display:block;font-size:14px;opacity:.7}
+    .features{margin-top:120px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .feature{padding:28px;border-radius:22px;background:rgba(8,14,40,.85);border:1px solid #14236a}
+    .note{margin-top:120px;padding:40px;border-radius:28px;border:1px dashed #2b5cff;background:rgba(7,15,46,.6);text-align:center}
+    .note h2{margin:0 0 12px 0}
+    footer{margin-top:140px;text-align:center;opacity:.6}
+    @media(max-width:900px){h1{font-size:48px}.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="container">
+    <header>
+      <div class="logo">Light Client</div>
+      <a class="btn secondary" href="https://t.me/light_clientmc" target="_blank">Telegram</a>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1><span class="glow">Light</span><br>Client</h1>
+        <p class="subtitle">A high-performance Minecraft 1.8.9 client built for smooth PvP, clean visuals, and zero compromises.</p>
+        <div class="actions">
+          <a class="btn" href="https://workupload.com/file/BTrWLUZKXzD">Download</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="stats">
+          <div class="stat">+120%<span>Average FPS</span></div>
+          <div class="stat">0 Lag<span>Optimized Core</span></div>
+          <div class="stat">Instant<span>Startup Time</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature"><h3>Built for 1.8.9</h3><p>Perfectly tuned for legacy PvP servers and competitive gameplay.</p></div>
+      <div class="feature"><h3>Minimal & Fast</h3><p>No bloat, no trash modules. Only what actually matters.</p></div>
+      <div class="feature"><h3>Clean & Legit</h3><p>The presence of legitimate modules that will not identify you as a cheater.</p></div>
+    </section>
+
+    <section class="note">
+      <h2>Important</h2>
+      <p>You must install <strong>Minecraft Forge 1.8.9</strong> before launching Light Client. The client works exclusively as a Forge-based mod.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Light Client · Not affiliated with Mojang or Microsoft</p>
+    </footer>
+  </div>
+</body>
+</html>
+
